@@ -7,16 +7,15 @@
 //@import "plugins/sliders";
 //@import "plugins/swiper/swiper";
 @import "ui/buttons";
+@import "./plugins/animate";
 //@import "ui/modal";
-//@import "ui/inputs";
-//@import "ui/switcher";
-//@import "ui/tooltips";
-//@import "ui/scrollbar";
-//@import "ui/dropdown";
-
-//links
-
-.text-gray {
+  //@import "ui/inputs";
+  //@import "ui/switcher";
+  //@import "ui/tooltips";
+  //@import "ui/scrollbar";
+  //@import "ui/dropdown";
+  //links
+  .text-gray {
   color: $color-gray;
 }
 .text-link {

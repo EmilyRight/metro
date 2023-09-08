@@ -19,10 +19,8 @@ window.addEventListener('load', () => {
 
   GTM.addEventListeners();
   goNextSection();
-  scrollTeaser(document.querySelector('.teaser-next'))
-
-  });
-
+  scrollTeaser(document.querySelector('.teaser-next'));
+});
 
 function goNextSection() {
   const goNextBtns = document.querySelectorAll('.js-go-next');

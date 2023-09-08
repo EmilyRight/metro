@@ -41,7 +41,7 @@
       overflow-x: hidden;
       img {
         position: absolute;
-        bottom: 0rem;
+        bottom: 0.5rem;
         z-index: 10;
         max-width: 34rem;
       }
@@ -100,8 +100,9 @@
         border-top-left-radius: 20% 100%;
         // background-color: aqua;
         img {
-          max-width: 48rem;
+          width: 50rem;
           bottom: 1rem;
+          left: -.5rem;
         }
         .ellipse {
           width: 15rem;
