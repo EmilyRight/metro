@@ -1,5 +1,4 @@
 .section-mixx {
-
   position: relative;
   &::before,
   &::after {
@@ -9,6 +8,7 @@
     height: 18rem;
     border-radius: 50%;
     filter: blur(50px);
+    z-index: 1;
   }
   &::before {
     background-color: #3fcbff;
