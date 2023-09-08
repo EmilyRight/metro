@@ -1,5 +1,5 @@
 .section-mixx {
-  background: #1f2229;
+
   position: relative;
   &::before,
   &::after {
@@ -54,7 +54,7 @@
   .fadeIn {
   }
   .btn {
-    padding: 1.1rem 3.2rem;
+    padding: 1.1rem 3.3rem;
     min-width: auto;
     margin-left: 0;
     margin-right: auto;
@@ -124,7 +124,9 @@
       img {
         position: absolute;
         display: block;
-        width: 30rem;
+        width: 20rem;
+        transform: rotate(10deg);
+        right: -3rem;
       }
     }
   }

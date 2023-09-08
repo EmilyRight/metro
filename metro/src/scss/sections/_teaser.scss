@@ -5,7 +5,7 @@
   .platform_ios & {
     .video-layer {
       background: url("../video/fallback-ios@2x.jpg") no-repeat;
-      background-size: 120%;
+      background-size: 120% 120%;
       background-position: 50% 0;
 
       video {

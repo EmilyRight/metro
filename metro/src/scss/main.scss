@@ -15,7 +15,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: none;
 }
-
+.dark-bg {
+  background: #1f2229;
+}
 @import "vars";
 @import "./mixins";
 @import "base/base-reset";
