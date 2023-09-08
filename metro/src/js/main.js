@@ -2,12 +2,8 @@ import $ from 'jquery';
 import { WOW } from './vendor/wow.min';
 import detectDevice from './components/detectDevice';
 
-import { closeModal, openModal } from './components/modal';
-import {
-  fieldListener, validateFields, keyField, prepField,
-} from './components/inputs';
-import generateId from './components/utils';
 import GTMEvents from './components/gtmEvents';
+import handleTooltip from './components/tooltip';
 
 const GTM = new GTMEvents();
 
@@ -16,7 +12,7 @@ window.jQuery = window.$ = $;
 window.addEventListener('load', () => {
   detectDevice(); // videoTeaser();
   new WOW().init();
-
+  handleTooltip();
   GTM.addEventListeners();
   goNextSection();
   scrollTeaser(document.querySelector('.teaser-next'));
@@ -53,3 +49,11 @@ function scrollTeaser(el) {
     scrollToElement(el);
   }
 }
+
+// function handleTooltip() {
+//   const tooltipIcon = document.querySelector('.tooltip__icon');
+//   const tooltip = document.querySelector('.tooltip');
+//   tooltipIcon.addEventListener('click', () => {
+//     tooltip.classList.add('opened');
+//   });
+// }

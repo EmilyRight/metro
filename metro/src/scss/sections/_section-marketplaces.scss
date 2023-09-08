@@ -76,9 +76,12 @@
         padding-left: 3vw;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
+        transition: .4s;
         &__info {
           display: flex;
           flex-direction: column;
+          transition: .4s;
         }
 
         &__name {
@@ -95,6 +98,9 @@
           bottom: -1.5vw;
           width: 10.5vw;
           // max-width: 15rem;
+        }
+        &:hover {
+          transform: scale(1.02);
         }
       }
     }

@@ -197,7 +197,7 @@
             </div>
             <div class="pic-layer pic-layer_schema">
               <picture class="picture">
-                <img src="./img/page/schema.jpg" alt="" />
+                <img src="./img/page/schema.svg" alt="" />
               </picture>
             </div>
           </div>
@@ -269,8 +269,20 @@
                 >
               </div>
               <div class="price__buttons">
-                <a href="" class="btn btn-primary" target="_blank">Купить</a>
-                <a href="" class="btn" target="_blank">Перейти в&nbsp;Tele2</a>
+                <a
+                  href="https://tele2.ru/shop/checkout?simplePurchase=true&tariff=everywhere-online"
+                  class="btn btn-primary js-gtm-event"
+                  data-event="conv_buy"
+                  target="_blank"
+                  >Купить</a
+                >
+                <a
+                  href="https://tele2.ru/connectTariff"
+                  class="btn js-gtm-event"
+                  data-event="conv_mnp"
+                  target="_blank"
+                  >Перейти в&nbsp;Tele2</a
+                >
               </div>
             </div>
           </div>
@@ -285,56 +297,80 @@
             class="marketplaces__list marketplaces-list marketplaces-list_mobile"
           >
             <li class="marketplaces-list__item mp-item">
-              <a href="" class="mp-item__link" target="_blank">
+              <a
+                href=""
+                class="mp-item__link js-gtm-event"
+                data-event="conv_partner-ozon"
+                target="_blank"
+              >
                 <img src="./img/icons/icons8-ozon.svg" alt="" />
               </a>
               <div class="mp-item__name">OZON</div>
             </li>
             <li class="marketplaces-list__item mp-item">
-              <a href="" class="mp-item__link" target="_blank">
+              <a
+                href=""
+                class="mp-item__link js-gtm-event"
+                target="_blank"
+                data-event="conv_partner-wild"
+              >
                 <img src="./img/icons/icons_WB.svg" alt="" />
               </a>
               <div class="mp-item__name">Wildberries</div>
             </li>
             <li class="marketplaces-list__item mp-item">
-              <a href="" class="mp-item__link" target="_blank">
+              <a
+                href=""
+                class="mp-item__link js-gtm-event"
+                target="_blank"
+                data-event="conv_partner-market"
+              >
                 <img src="./img/icons/icons_Ya.svg" alt="" />
               </a>
               <div class="mp-item__name">Я.Маркет</div>
             </li>
           </ul>
 
-          <ul
+          <div
             class="marketplaces__list marketplaces-list marketplaces-list_desktop"
           >
-            <li class="marketplaces-list__item mp-item">
-              <div class="mp-item__info">
+            <a
+              class="marketplaces-list__item mp-item js-gtm-event"
+              href=""
+              data-event="conv_partner-ozon"
+              target="_blank"
+            >
+              <span class="mp-item__info">
                 <span class="mp-item__name">OZON</span>
-                <a href="" class="mp-item__link link" target="_blank"
-                  >Перейти</a
-                >
-              </div>
+                <span class="mp-item__link link">Перейти</span>
+              </span>
               <img src="./img/icons/icons8-ozon.svg" alt="" />
-            </li>
-            <li class="marketplaces-list__item mp-item">
-              <div class="mp-item__info">
+            </a>
+            <a
+              class="marketplaces-list__item mp-item js-gtm-event"
+              href=""
+              data-event="conv_partner-wild"
+              target="_blank"
+            >
+              <span class="mp-item__info">
                 <span class="mp-item__name">Wildberries</span>
-                <a href="" target="_blank" class="mp-item__link link"
-                  >Перейти</a
-                >
-              </div>
+                <span class="mp-item__link link">Перейти</span>
+              </span>
               <img src="./img/icons/icons_WB.svg" alt="" />
-            </li>
-            <li class="marketplaces-list__item mp-item">
-              <div class="mp-item__info">
+            </a>
+            <a
+              class="marketplaces-list__item mp-item js-gtm-event"
+              href=""
+              data-event="conv_partner-market"
+              target="_blank"
+            >
+              <span class="mp-item__info">
                 <span class="mp-item__name">Я.Маркет</span>
-                <a href="" class="mp-item__link link" target="_blank"
-                  >Перейти</a
-                >
-              </div>
+                <span class="mp-item__link link">Перейти</span>
+              </span>
               <img src="./img/icons/icons_Ya.svg" alt="" />
-            </li>
-          </ul>
+            </a>
+          </div>
         </div>
       </section>
       <section
@@ -383,8 +419,8 @@
               </p>
               <a
                 class="btn btn-primary js-gtm-event"
-                href="https://tele2.ru/tariffs"
-                data-event="conv_connect-else"
+                href="https://tele2.ru/shop/checkout?simplePurchase=true&tariff=everywhere-online"
+                data-event="conv_connect"
                 target="_blank"
                 >Подключиться</a
               >
@@ -398,16 +434,29 @@
             <h2 class="box-content__title">Уже&nbsp;с&nbsp;нами?</h2>
             <div class="box-content__text">
               <p>
-
                 Прокачайте свой тариф&nbsp;&mdash; 50&nbsp;ГБ, музыка, кино
                 и&nbsp;другие сервисы с&nbsp;подпиской MiXX&nbsp;S бесплатно
-                до&nbsp;конца годa <button
-                  class="js-gtm-event popup__link popup-icon"
-                  data-event="tooltip"
+                до&nbsp;конца годa
+              </p>
+
+              <div class="tooltip-block">
+                <button
+                  class="js-gtm-event popup__link tooltip__icon tooltip-icon"
+                  data-event="info"
                 >
                   i
                 </button>
-              </p>
+                <div class="tooltip">
+                  <div class="tooltip__text">
+                    Предложение доступно только для абонентов Москвы и
+                    Московской области без действующих подписок MiXX и скидок на
+                    них.
+                  </div>
+                  <div class="tooltip__close-icon tooltip-icon">
+                    <span class="close"></span>
+                  </div>
+                </div>
+              </div>
             </div>
             <a
               href="https://tele2.ru/tariffs"

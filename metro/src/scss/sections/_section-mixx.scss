@@ -37,6 +37,8 @@
     }
     &__text {
       text-align: left;
+      position: relative;
+      max-width: 39rem;
     }
     &__text p {
       text-align: left;
@@ -49,19 +51,6 @@
     }
   }
 
-  .popup-icon {
-    background-color: transparent;
-    border: 2px solid #3fcbff;
-    border-radius: 50%;
-    min-width: 2.2rem;
-    max-height: 2.2rem;
-    color: #3fcbff;
-    position: absolute;
-    font-size: 1.6rem;
-    right: -3rem;
-    bottom: 0.3rem;
-    cursor: pointer;
-  }
   .fadeIn {
   }
   .btn {
@@ -73,16 +62,103 @@
     margin-top: 1rem;
     align-self: flex-start;
   }
-  .btn--black {
-  }
-  .js-gtm-event {
-  }
+
   .box-pic {
     display: none;
   }
-  .pic-layer {
+
+  .tooltip-block {
+    display: inline;
+    position: absolute;
+    bottom: 0.2rem;
   }
-  .picture {
+  .tooltip {
+    position: absolute;
+    bottom: 3rem;
+    left: 43%;
+    transform: translateX(-43%);
+    border-radius: 16px;
+    padding: 1.2rem;
+    background-image: linear-gradient(231deg, #75d3f3 24.34%, #4c91ef 76.87%);
+    width: 25.6rem;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s;
+    &.opened {
+      opacity: 1;
+      pointer-events: all;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      background-color: #56A1F0;
+      bottom: -0.5rem;
+      left: 50%;
+      z-index: 5;
+      transform: translateX(-50%) rotate(45deg);
+    }
+    &__icon {
+      background-color: transparent;
+      border: .2rem solid #3fcbff;
+      border-radius: 50%;
+      width: 2.2rem;
+      height: 2.2rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #3fcbff;
+      position: absolute;
+      font-size: 1.6rem;
+      right: -3rem;
+      bottom: 0.2rem;
+      cursor: pointer;
+    }
+    &__text {
+      color: #fff;
+      max-width: 90%;
+      @include text-small;
+    }
+
+    &__close-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      background-color: #6bbedb;
+      position: absolute;
+      top: 1.2rem;
+      border-radius: 50%;
+      right: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .close {
+      display: block;
+      width: 1.2rem;
+      height: 0.1rem;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1.2rem;
+        height: 0.1rem;
+        background-color: #fff;
+      }
+      &::before {
+        // top: .2rem;
+        transform: rotate(45deg);
+      }
+      &::after {
+        // bottom: .2rem;
+        transform: rotate(-45deg);
+      }
+    }
   }
 
   @media (min-width: 600px) {
@@ -115,6 +191,9 @@
         font-size: 3.8rem;
         line-height: 4.4rem;
         color: #fff;
+      }
+      &__text {
+        max-width: 100%;
       }
     }
 
