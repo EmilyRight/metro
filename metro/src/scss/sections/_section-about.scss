@@ -1,6 +1,7 @@
 .section-about {
   .section-layer {
     flex-direction: column;
+    overflow: hidden;
   }
   .box-content {
     order: 2;
@@ -94,10 +95,11 @@
         max-width: 100%;
       }
       &_train {
-        min-height: 21vw;
-        bottom: 0rem;
-        border-bottom-left-radius: 20% 100%;
-        border-top-left-radius: 20% 100%;
+        min-height: 19vw;
+        bottom: auto;
+        top: 9rem;
+        border-bottom-left-radius: 18% 100%;
+        border-top-left-radius: 18% 100%;
         // background-color: aqua;
         img {
           width: 30vw;
@@ -106,20 +108,17 @@
           left: -0.5rem;
         }
         .ellipse {
-          // width: 15rem;
-          // height: 70%;
-          width: 12vw;
-          height: 17vw;
+          width: 10.5vw;
+          height: 15vw;
         }
       }
 
       &_schema {
         z-index: 0;
-        width: 25vw;
+        width: 20vw;
         max-width: none;
-        right: 5rem;
-        top: auto;
-        bottom: -1rem;
+        top: 2rem;
+        right: 5vw;
         // position: relative;
         img {
           width: 100%;

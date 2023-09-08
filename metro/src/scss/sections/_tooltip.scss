@@ -1,7 +1,7 @@
 .tooltip-block {
   display: inline;
   position: absolute;
-  bottom: 0.2rem;
+  bottom: 0;
 }
 .tooltip {
   position: absolute;
@@ -46,7 +46,7 @@
     position: absolute;
     font-size: 1.6rem;
     right: -3rem;
-    bottom: 0.2rem;
+    bottom: 0;
     cursor: pointer;
   }
   &__text {
