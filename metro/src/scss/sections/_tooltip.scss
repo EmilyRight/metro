@@ -20,6 +20,9 @@
   &.opened {
     opacity: 1;
     pointer-events: all;
+    &::before {
+      opacity: 1;
+    }
   }
   &::before {
     content: "";
@@ -31,6 +34,7 @@
     left: 50%;
     z-index: 5;
     transform: translateX(-50%) rotate(45deg);
+    opacity: 0;
   }
   &__icon {
     background-color: transparent;
@@ -91,5 +95,3 @@
     }
   }
 }
-
-
