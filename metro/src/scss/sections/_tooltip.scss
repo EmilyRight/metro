@@ -10,7 +10,8 @@
   transition: 0.4s;
   bottom: 3rem;
   left: 43%;
-  transform: translateX(-43%) scale(0);
+  -webkit-transform: translateX(-43%);
+  transform: translateX(-43%);
   border-radius: 16px;
   padding: 1.2rem;
   background-image: linear-gradient(231deg, #75d3f3 24.34%, #4c91ef 76.87%);
@@ -18,7 +19,8 @@
   &.opened {
     z-index: 10;
     opacity: 1;
-    transform: translateX(-43%) scale(1);
+    -webkit-transform: translateX(-43%);
+    transform: translateX(-43%);
     &::before {
       opacity: 1;
     }
