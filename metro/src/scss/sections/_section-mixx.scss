@@ -10,7 +10,6 @@
     will-change: filter;
     -webkit-filter: blur(50px);
     filter: blur(50px);
-    z-index: 1;
   }
   &::before {
     background-color: #3fcbff;
@@ -122,6 +121,7 @@
       flex: none;
       width: 30%;
       position: relative;
+      z-index: 10;
       img {
         position: absolute;
         display: block;
