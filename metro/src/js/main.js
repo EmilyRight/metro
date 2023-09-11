@@ -4,6 +4,7 @@ import detectDevice from './components/detectDevice';
 
 import GTMEvents from './components/gtmEvents';
 import handleTooltip from './components/tooltip';
+import videoTeaser from './components/videoTeaser';
 
 const GTM = new GTMEvents();
 
@@ -15,7 +16,8 @@ window.addEventListener('load', () => {
   handleTooltip();
   GTM.addEventListeners();
   goNextSection();
-  scrollTeaser(document.querySelector('.teaser-next'));
+  scrollTeaser(document.querySelector('.section-about'));
+  videoTeaser();
 });
 
 function goNextSection() {
