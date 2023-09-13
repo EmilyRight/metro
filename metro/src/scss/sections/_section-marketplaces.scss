@@ -18,14 +18,23 @@
       &__link {
         display: block;
         cursor: pointer;
+
+      }
+      &__image {
+        width: 9.6rem;
+        height: 9.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img {
-          max-width: 9.6rem;
+          max-width: 100%;
+          display: block;
         }
       }
-
       &__name {
         @include text-main;
         color: #a2abb4;
+
       }
     }
   }
@@ -39,27 +48,6 @@
     }
     .marketplaces-list_mobile {
       display: none;
-      // display: flex;
-      // justify-content: space-between;
-      // padding-left: 1rem;
-      // padding-right: 1rem;
-      // .mp-item {
-      //   display: flex;
-      //   flex-direction: column;
-      //   align-items: center;
-      //   &__link {
-      //     display: block;
-      //     cursor: pointer;
-      //     img {
-      //       max-width: 9.6rem;
-      //     }
-      //   }
-
-      //   &__name {
-      //     @include text-main;
-      //     color: #a2abb4;
-      //   }
-      // }
     }
     .marketplaces-list_desktop {
       display: flex;
@@ -77,28 +65,34 @@
         position: relative;
         overflow: hidden;
         cursor: pointer;
-        transition: .4s;
+        transition: 0.4s;
         &__info {
           display: flex;
           flex-direction: column;
-          transition: .4s;
+          transition: 0.4s;
         }
 
         &__name {
           @include text-main;
-          font-weight: 700
+          font-weight: 700;
         }
 
         &__link {
           @include text-small;
         }
-        img {
+
+        &__image {
           position: absolute;
           right: -1.5vw;
           bottom: -1.5vw;
           width: 10.5vw;
-          // max-width: 15rem;
+          height: 10.5vw;
         }
+        img {
+          display: block;
+          width: 100%;
+        }
+
         &:hover {
           transform: scale(1.02);
         }
